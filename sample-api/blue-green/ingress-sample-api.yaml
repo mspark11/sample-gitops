@@ -13,7 +13,7 @@ spec:
       name: http
       protocol: HTTP
     hosts:
-    - "dev.sample-api.127.0.0.1.sslip.io"
+    - "dev.sample-api.192.168.56.11.sslip.io"
 ---
 apiVersion: networking.istio.io/v1alpha3
 kind: VirtualService
@@ -22,7 +22,7 @@ metadata:
   namespace: api 
 spec:
   hosts:
-  - "dev.sample-api.127.0.0.1.sslip.io"
+  - "dev.sample-api.192.168.56.11.sslip.io"
   gateways:
   - sample-api-gateway
   http:

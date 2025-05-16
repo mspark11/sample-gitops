@@ -6,7 +6,7 @@ metadata:
   namespace: api
 spec:
   rules:
-  - host: "sample-api.127.0.0.1.sslip.io"
+  - host: "sample-api.192.168.56.11.sslip.io"
     http:
       paths:
       - pathType: Prefix
@@ -16,7 +16,7 @@ spec:
             name: sample-api-active
             port:
               number: 8081
-  - host: "preview.sample-api.127.0.0.1.sslip.io"
+  - host: "preview.sample-api.192.168.56.11.sslip.io"
     http:
       paths:
       - pathType: Prefix
