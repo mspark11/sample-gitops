@@ -7,5 +7,5 @@ resources:
 - sample-api-ingress.yaml
 
 images:
-- name: oscka/sample-api
+- name: minsoo11/sample-api
   newTag: 0.0.8
